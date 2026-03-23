@@ -1,4 +1,4 @@
-package practice.ch01;
+package hw.ch01;
 
 import java.util.Iterator; //jdk에서 제공하는 Iterator 인터페이스, 제너릭
 import java.util.NoSuchElementException;

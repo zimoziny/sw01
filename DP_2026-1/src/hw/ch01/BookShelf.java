@@ -1,4 +1,4 @@
-package practice.ch01;
+package hw.ch01;
 
 import java.util.Iterator;
 
@@ -30,7 +30,7 @@ public class BookShelf implements Iterable<Book> {
          return new BookShelfIterator(this); //인자를 현재 책꽂이 자신으로 넘겨준다
     }
 
-    public Iterator<Book> iteratorByGenre(String genre) {
+    public Iterator<Book> iteratorByGenre(String genre) { //각각의 필터 Iterator 객체를 생성해서 반환하는 역할의 메서드
         return new GenreFilterIterator(this, genre);
     }
 
