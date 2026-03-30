@@ -1,0 +1,13 @@
+public class KoreanOutletAdapter implements Charger {
+    private KoreanOutlet outlet;
+
+    public KoreanOutletAdapter(KoreanOutlet outlet) {
+        this.outlet = outlet;
+    }
+
+    @Override
+    public int charge() {
+        int voltage = outlet.provide();
+        return voltage;
+    }
+}

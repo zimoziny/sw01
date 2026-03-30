@@ -1,0 +1,42 @@
+public class StringDisplay extends AbstractDisplay {
+    private String string;
+    private int width;
+
+    // 기본 반복 횟수 (5회)
+    public StringDisplay(String string) {
+        super();
+        this.string = string;
+        this.width = string.length();
+    }
+
+    // 반복 횟수 지정
+    public StringDisplay(String string, int repeatCount) {
+        super(repeatCount);
+        this.string = string;
+        this.width = string.length();
+    }
+
+    @Override
+    public void open() {
+        printLine();
+    }
+
+    @Override
+    public void print() {
+        System.out.println("|" + string + "|");
+    }
+
+    @Override
+    public void close() {
+        printLine();
+    }
+
+    private void printLine() {
+        StringBuilder sb = new StringBuilder("+");
+        for (int i = 0; i < width; i++) {
+            sb.append("-");
+        }
+        sb.append("+");
+        System.out.println(sb.toString());
+    }
+}
