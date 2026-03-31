@@ -1,20 +1,22 @@
+package hw.ch03;
+
 public abstract class AbstractDisplay {
     private int repeatCount;
- 
-    // 기본 생성자: 반복 횟수 기본값 5
+
+    // 기본 생성자: 반복 횟수 기본값 5 (기존 호환성 유지)
     public AbstractDisplay() {
         this.repeatCount = 5;
     }
- 
+
     // 반복 횟수를 인자로 받는 생성자
     public AbstractDisplay(int repeatCount) {
         this.repeatCount = repeatCount;
     }
- 
+
     public abstract void open();
     public abstract void print();
     public abstract void close();
- 
+
     // Template Method
     public final void display() {
         open();

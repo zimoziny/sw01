@@ -1,3 +1,5 @@
+package hw.ch02;
+
 public class KoreanOutletAdapter implements Charger {
     private KoreanOutlet outlet;
 

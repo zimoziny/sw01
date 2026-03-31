@@ -1,3 +1,5 @@
+package hw.ch03;
+
 public class StringDisplay extends AbstractDisplay {
     private String string;
     private int width;
