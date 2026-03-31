@@ -2,6 +2,9 @@ package hw.ch03;
 
 public class Main {
     public static void main(String[] args) {
+
+        
+        System.out.println("20231114 이다은");
      // [3-1] 기본 테스트: 기존 코드 호환성 확인
         System.out.println("**[3-1] 기본 테스트**");
         AbstractDisplay d1 = new CharDisplay('H');        // 기본 5회
