@@ -3,7 +3,7 @@ package ch01.A1;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class BookShelfIterator implements Iterator<Book> {
+public class BookShelfIterator implements Iterator<Book> {//책꽂이의 책들을 순회하는 이터레이터 클래스 구현
     private BookShelf bookShelf;
     private int index;
 
